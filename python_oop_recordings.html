@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>הקלטות – מונחה עצמים בפייתון</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --primary: #2457a6;
+      --primary-hover: #194581;
+      --text: #1f2937;
+      --muted: #64748b;
+      --surface: #ffffff;
+      --background: #f3f6fb;
+      --border: #e2e8f0;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      padding: 40px 18px;
+      min-height: 100vh;
+      background: var(--background);
+      color: var(--text);
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    main {
+      width: min(100%, 720px);
+      margin: 0 auto;
+    }
+
+    header {
+      margin-bottom: 28px;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      font-size: clamp(1.7rem, 5vw, 2.3rem);
+    }
+
+    header p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+
+    .recordings {
+      display: grid;
+      gap: 14px;
+    }
+
+    .recording {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      padding: 20px 22px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      box-shadow: 0 3px 12px rgb(15 23 42 / 5%);
+    }
+
+    .recording h2 {
+      margin: 0;
+      font-size: 1.1rem;
+    }
+
+    .recording p {
+      margin: 6px 0 0;
+      color: var(--muted);
+      font-size: .92rem;
+    }
+
+    .watch {
+      flex: 0 0 auto;
+      display: inline-block;
+      padding: 10px 17px;
+      border-radius: 8px;
+      background: var(--primary);
+      color: white;
+      font-weight: 700;
+      text-decoration: none;
+      transition: background .15s ease;
+    }
+
+    .watch:hover, .watch:focus-visible {
+      background: var(--primary-hover);
+    }
+
+    footer {
+      margin-top: 26px;
+      color: var(--muted);
+      text-align: center;
+      font-size: .85rem;
+    }
+
+    @media (max-width: 480px) {
+      .recording {
+        align-items: stretch;
+        flex-direction: column;
+      }
+      .watch { text-align: center; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>הקלטות הקורס</h1>
+      <p>מונחה עצמים בפייתון</p>
+    </header>
+
+    <section class="recordings" aria-label="רשימת הקלטות">
+      <article class="recording">
+        <div>
+          <h2>הקלטה 1</h2>
+          <p>מפגש הקורס – צפייה בהקלטה ב-Zoom</p>
+        </div>
+        <a class="watch"
+           href="https://afeka-ac-il.zoom.us/rec/share/BfMHLwdUlKFpBeLNgiNc39sa-iRyf0j4ez-XYgW4M78fK8dGuf9eLIf3p5L4h-jW.cxdXVbzJbOdItewu?startTime=1793188986000"
+           target="_blank" rel="noopener noreferrer">לצפייה בהקלטה</a>
+      </article>
+
+      <article class="recording">
+        <div>
+          <h2>הקלטה 2</h2>
+          <p>מפגש הקורס – צפייה בהקלטה ב-Zoom</p>
+        </div>
+        <a class="watch"
+           href="https://afeka-ac-il.zoom.us/rec/share/Tn8xCoMPWeqzHTg1xH3Zl5jRHc0eUFZ53xGIvEdOWs29Qln4ewcxHs7GjyEpbw0C.Q8KAPRO3t0crd8Uc?startTime=1793772762000"
+           target="_blank" rel="noopener noreferrer">לצפייה בהקלטה</a>
+      </article>
+
+      <article class="recording">
+        <div>
+          <h2>הקלטה 3</h2>
+          <p>מפגש הקורס – צפייה בהקלטה ב-Zoom</p>
+        </div>
+        <a class="watch"
+           href="https://afeka-ac-il.zoom.us/rec/share/13tSrd-7xmLiRrA6hi1QyK45gD5Tjuk8ttKrXuNMs8mpo6-G0AXO1d3tByWgeLBq.cmp91f5iZF_W6l73?startTime=1794376911000"
+           target="_blank" rel="noopener noreferrer">לצפייה בהקלטה</a>
+      </article>
+    </section>
+
+    <footer>הקישורים פותחים את ההקלטות באתר Zoom</footer>
+  </main>
+</body>
+</html>
